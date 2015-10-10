@@ -8,7 +8,12 @@
 
 #import "ViewController.h"
 
+@import ApiAI;
+@import Masonry;
+
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet AIVoiceRequestButton *button;
+
 
 @end
 
@@ -17,6 +22,14 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	
+	[_button setSuccessCallback:^(id response){
+		NSLog(@"%@",response);
+	}];
+	
+	[_button setFailureCallback:^(NSError *error){
+		NSLog(@"%@",error);
+	}];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,6 +7,16 @@
 //
 
 #import "AppDelegate.h"
+@import GoogleMaps;
+@import AVFoundation;
+
+#import <Parse/Parse.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
+
+#import "HNRootViewController.h"
+
+@import ApiAI;
 
 @interface AppDelegate ()
 
@@ -17,7 +27,44 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
-	return YES;
+	
+	// Initialize Parse.
+	[Parse setApplicationId:@"HU9hwFTIdAQolkL68VtwMqEUtzzqIlMTHmHr4Evf"
+				  clientKey:@"9sCNSBQ6Dcp8kNXslLRmayUIueo2d2a195xgjGu9"];
+	//[PFFacebookUtils initializeFacebookWithApplicationLaunchOptions:launchOptions];
+	
+	
+	[GMSServices provideAPIKey:@"AIzaSyB997sejTuYKuAsenSjQQLHT5GGbCC5Wdg"];
+	
+	[self setGlobalApperance];
+	
+	UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound) categories:nil];
+	
+	[application registerUserNotificationSettings:settings];
+	
+	[application registerForRemoteNotifications];
+	
+	[self.window makeKeyAndVisible];
+	
+	//Init voice recoginition
+	[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+	[[AVAudioSession sharedInstance] setActive:YES error:nil];
+	
+	ApiAI *apiai = [ApiAI sharedApiAI];
+	
+	id <AIConfiguration> configuration = [[AIDefaultConfiguration alloc] init];
+	
+	configuration.clientAccessToken = @"cf8a067eb74146838135e4aaa451cf40";
+	configuration.subscriptionKey = @"144bb0bc-8472-4aa4-9449-b947e13d818b";
+	
+	apiai.configuration = configuration;
+	
+	
+	
+	
+	
+	
+	return [[FBSDKApplicationDelegate sharedInstance]application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -36,10 +83,36 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
 	// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+	[FBSDKAppEvents activateApp];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+	return [[FBSDKApplicationDelegate sharedInstance]application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+}
+
+
+#pragma mark - Push Notif
+-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
+	PFInstallation *installation = [PFInstallation currentInstallation];
+	[installation setDeviceTokenFromData:deviceToken];
+	[installation saveInBackground];
+}
+
+
+#pragma mark - App apperance
+-(void)setGlobalApperance{
+	[[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
+	[[UINavigationBar appearance]setTintColor:[UIColor whiteColor]];
+	//[[UINavigationBar appearance]setBarTintColor:[UIColor]]
+	//[[UINavigationBar appearance]setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont fontWithName:TWBoldFontName size:18]}];
+	[[UINavigationBar appearance]setTranslucent:YES];
+	[[UINavigationBar appearance]setBarStyle:UIBarStyleBlackTranslucent];
+}
+
+
 
 @end

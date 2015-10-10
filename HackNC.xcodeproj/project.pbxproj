@@ -18,6 +18,16 @@
 		8E5390891BC964D600AB96A9 /* Pods.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF3C167DB0F42BFB6AC93571 /* Pods.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8E53908C1BC9767900AB96A9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E53908B1BC9767900AB96A9 /* AVFoundation.framework */; };
 		8E5390901BC9807E00AB96A9 /* HNRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E53908F1BC9807E00AB96A9 /* HNRootViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390931BC9866400AB96A9 /* HNHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390921BC9866400AB96A9 /* HNHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390961BC9868600AB96A9 /* HNLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390951BC9868600AB96A9 /* HNLoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8E53909E1BC98AC100AB96A9 /* HNConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E53909D1BC98AC100AB96A9 /* HNConstants.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390AE1BC98C0800AB96A9 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390A11BC98C0800AB96A9 /* UIColor+FlatUI.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390AF1BC98C0800AB96A9 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390A31BC98C0800AB96A9 /* UIImage+AlphaAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390B01BC98C0800AB96A9 /* UIImage+Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390A51BC98C0800AB96A9 /* UIImage+Empty.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390B11BC98C0800AB96A9 /* UIImage+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390A71BC98C0800AB96A9 /* UIImage+FlatUI.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390B21BC98C0800AB96A9 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390A91BC98C0800AB96A9 /* UIImage+ImageEffects.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390B31BC98C0800AB96A9 /* UIImage+ResizeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390AB1BC98C0800AB96A9 /* UIImage+ResizeAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390B41BC98C0800AB96A9 /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390AD1BC98C0800AB96A9 /* UIImage+RoundedCornerAdditions.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +60,26 @@
 		8E53908B1BC9767900AB96A9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8E53908E1BC9807E00AB96A9 /* HNRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNRootViewController.h; path = ViewControllers/HNRootViewController.h; sourceTree = "<group>"; };
 		8E53908F1BC9807E00AB96A9 /* HNRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HNRootViewController.m; path = ViewControllers/HNRootViewController.m; sourceTree = "<group>"; };
+		8E5390911BC9866400AB96A9 /* HNHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNHomeViewController.h; path = ViewControllers/HNHomeViewController.h; sourceTree = "<group>"; };
+		8E5390921BC9866400AB96A9 /* HNHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HNHomeViewController.m; path = ViewControllers/HNHomeViewController.m; sourceTree = "<group>"; };
+		8E5390941BC9868600AB96A9 /* HNLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNLoginViewController.h; path = ViewControllers/HNLoginViewController.h; sourceTree = "<group>"; };
+		8E5390951BC9868600AB96A9 /* HNLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HNLoginViewController.m; path = ViewControllers/HNLoginViewController.m; sourceTree = "<group>"; };
+		8E53909C1BC98AC100AB96A9 /* HNConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNConstants.h; path = Helper/HNConstants.h; sourceTree = "<group>"; };
+		8E53909D1BC98AC100AB96A9 /* HNConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HNConstants.m; path = Helper/HNConstants.m; sourceTree = "<group>"; };
+		8E5390A01BC98C0800AB96A9 /* UIColor+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatUI.h"; sourceTree = "<group>"; };
+		8E5390A11BC98C0800AB96A9 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
+		8E5390A21BC98C0800AB96A9 /* UIImage+AlphaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AlphaAdditions.h"; sourceTree = "<group>"; };
+		8E5390A31BC98C0800AB96A9 /* UIImage+AlphaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AlphaAdditions.m"; sourceTree = "<group>"; };
+		8E5390A41BC98C0800AB96A9 /* UIImage+Empty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Empty.h"; sourceTree = "<group>"; };
+		8E5390A51BC98C0800AB96A9 /* UIImage+Empty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Empty.m"; sourceTree = "<group>"; };
+		8E5390A61BC98C0800AB96A9 /* UIImage+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FlatUI.h"; sourceTree = "<group>"; };
+		8E5390A71BC98C0800AB96A9 /* UIImage+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FlatUI.m"; sourceTree = "<group>"; };
+		8E5390A81BC98C0800AB96A9 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		8E5390A91BC98C0800AB96A9 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		8E5390AA1BC98C0800AB96A9 /* UIImage+ResizeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeAdditions.h"; sourceTree = "<group>"; };
+		8E5390AB1BC98C0800AB96A9 /* UIImage+ResizeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeAdditions.m"; sourceTree = "<group>"; };
+		8E5390AC1BC98C0800AB96A9 /* UIImage+RoundedCornerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCornerAdditions.h"; sourceTree = "<group>"; };
+		8E5390AD1BC98C0800AB96A9 /* UIImage+RoundedCornerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCornerAdditions.m"; sourceTree = "<group>"; };
 		BF3C167DB0F42BFB6AC93571 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,6 +129,7 @@
 			children = (
 				8E5390741BC958BC00AB96A9 /* AppDelegate.h */,
 				8E5390751BC958BC00AB96A9 /* AppDelegate.m */,
+				8E5390971BC98A0B00AB96A9 /* Helper */,
 				8E53908D1BC9802500AB96A9 /* ViewControllers */,
 				8E5390771BC958BC00AB96A9 /* ViewController.h */,
 				8E5390781BC958BC00AB96A9 /* ViewController.m */,
@@ -124,8 +155,44 @@
 			children = (
 				8E53908E1BC9807E00AB96A9 /* HNRootViewController.h */,
 				8E53908F1BC9807E00AB96A9 /* HNRootViewController.m */,
+				8E5390911BC9866400AB96A9 /* HNHomeViewController.h */,
+				8E5390921BC9866400AB96A9 /* HNHomeViewController.m */,
+				8E5390941BC9868600AB96A9 /* HNLoginViewController.h */,
+				8E5390951BC9868600AB96A9 /* HNLoginViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8E5390971BC98A0B00AB96A9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8E53909C1BC98AC100AB96A9 /* HNConstants.h */,
+				8E53909D1BC98AC100AB96A9 /* HNConstants.m */,
+				8E53909F1BC98C0800AB96A9 /* UIImage */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		8E53909F1BC98C0800AB96A9 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				8E5390A01BC98C0800AB96A9 /* UIColor+FlatUI.h */,
+				8E5390A11BC98C0800AB96A9 /* UIColor+FlatUI.m */,
+				8E5390A21BC98C0800AB96A9 /* UIImage+AlphaAdditions.h */,
+				8E5390A31BC98C0800AB96A9 /* UIImage+AlphaAdditions.m */,
+				8E5390A41BC98C0800AB96A9 /* UIImage+Empty.h */,
+				8E5390A51BC98C0800AB96A9 /* UIImage+Empty.m */,
+				8E5390A61BC98C0800AB96A9 /* UIImage+FlatUI.h */,
+				8E5390A71BC98C0800AB96A9 /* UIImage+FlatUI.m */,
+				8E5390A81BC98C0800AB96A9 /* UIImage+ImageEffects.h */,
+				8E5390A91BC98C0800AB96A9 /* UIImage+ImageEffects.m */,
+				8E5390AA1BC98C0800AB96A9 /* UIImage+ResizeAdditions.h */,
+				8E5390AB1BC98C0800AB96A9 /* UIImage+ResizeAdditions.m */,
+				8E5390AC1BC98C0800AB96A9 /* UIImage+RoundedCornerAdditions.h */,
+				8E5390AD1BC98C0800AB96A9 /* UIImage+RoundedCornerAdditions.m */,
+			);
+			name = UIImage;
+			path = Helper/UIImage;
 			sourceTree = "<group>";
 		};
 		95251F4F8267A8118CBD2142 /* Frameworks */ = {
@@ -268,10 +335,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E5390AE1BC98C0800AB96A9 /* UIColor+FlatUI.m in Sources */,
+				8E5390931BC9866400AB96A9 /* HNHomeViewController.m in Sources */,
+				8E5390B41BC98C0800AB96A9 /* UIImage+RoundedCornerAdditions.m in Sources */,
 				8E5390791BC958BC00AB96A9 /* ViewController.m in Sources */,
+				8E5390961BC9868600AB96A9 /* HNLoginViewController.m in Sources */,
 				8E5390761BC958BC00AB96A9 /* AppDelegate.m in Sources */,
+				8E5390B31BC98C0800AB96A9 /* UIImage+ResizeAdditions.m in Sources */,
+				8E5390B01BC98C0800AB96A9 /* UIImage+Empty.m in Sources */,
 				8E5390901BC9807E00AB96A9 /* HNRootViewController.m in Sources */,
+				8E5390AF1BC98C0800AB96A9 /* UIImage+AlphaAdditions.m in Sources */,
+				8E5390B21BC98C0800AB96A9 /* UIImage+ImageEffects.m in Sources */,
 				8E5390731BC958BC00AB96A9 /* main.m in Sources */,
+				8E5390B11BC98C0800AB96A9 /* UIImage+FlatUI.m in Sources */,
+				8E53909E1BC98AC100AB96A9 /* HNConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

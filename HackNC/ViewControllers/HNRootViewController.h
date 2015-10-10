@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
-@interface HNRootViewController : ViewController
+@interface HNRootViewController : UINavigationController
+
+-(void)setRootViewController:(id)viewController animated:(BOOL)animated;
 
 @end

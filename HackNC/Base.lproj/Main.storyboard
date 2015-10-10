@@ -4,18 +4,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Root View Controller-->
         <scene sceneID="3qI-Ka-80w">
             <objects>
-                <navigationController id="Gzq-eM-kKg" sceneMemberID="viewController">
+                <navigationController id="Gzq-eM-kKg" customClass="HNRootViewController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eyA-Ki-0iQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="FMw-7y-gnb" kind="relationship" relationship="rootViewController" id="fwn-2L-a9d"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y5t-rh-C0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

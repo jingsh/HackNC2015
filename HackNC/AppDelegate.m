@@ -31,7 +31,7 @@
 	// Initialize Parse.
 	[Parse setApplicationId:@"HU9hwFTIdAQolkL68VtwMqEUtzzqIlMTHmHr4Evf"
 				  clientKey:@"9sCNSBQ6Dcp8kNXslLRmayUIueo2d2a195xgjGu9"];
-	//[PFFacebookUtils initializeFacebookWithApplicationLaunchOptions:launchOptions];
+	[PFFacebookUtils initializeFacebookWithApplicationLaunchOptions:launchOptions];
 	
 	
 	[GMSServices provideAPIKey:@"AIzaSyB997sejTuYKuAsenSjQQLHT5GGbCC5Wdg"];
@@ -58,11 +58,6 @@
 	configuration.subscriptionKey = @"144bb0bc-8472-4aa4-9449-b947e13d818b";
 	
 	apiai.configuration = configuration;
-	
-	
-	
-	
-	
 	
 	return [[FBSDKApplicationDelegate sharedInstance]application:application didFinishLaunchingWithOptions:launchOptions];
 }

@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "HackNC": {
+      "applicationId": "HU9hwFTIdAQolkL68VtwMqEUtzzqIlMTHmHr4Evf"
+    },
+    "_default": {
+      "link": "HackNC"
+    }
+  }
+}

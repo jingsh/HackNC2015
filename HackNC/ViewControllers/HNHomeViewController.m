@@ -12,6 +12,8 @@
 
 #import "HNListener.h"
 
+#import "HNConstants.h"
+
 #import "HNContactsViewController.h"
 #import "HNSettingsController.h"
 
@@ -28,7 +30,6 @@
 @interface HNHomeViewController ()<GMSMapViewDelegate>
 @property(nonatomic,strong) GMSMapView *mapView;
 @property(nonatomic,strong) MultiplePulsingHaloLayer *mHalo;
-@property(nonatomic,strong) PulsingHaloLayer *halo;
 @end
 
 @implementation HNHomeViewController
@@ -59,15 +60,34 @@
 	
 	[micButton mas_makeConstraints:^(MASConstraintMaker *maker){
 		maker.centerX.mas_equalTo(self.view.mas_centerX);
-		maker.bottom.mas_equalTo(self.view.mas_bottom).with.offset(-40);
+		maker.bottom.mas_equalTo(self.view.mas_bottom).with.offset(-30);
 	}];
-	
-	_halo = [PulsingHaloLayer layer];
 	
 	self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[[FAKIonIcons personAddIconWithSize:25]imageWithSize:CGSizeMake(25, 25)] style:UIBarButtonItemStylePlain target:self action:@selector(showFriendsController:)];
 	
 	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[[FAKIonIcons iosGearIconWithSize:25]imageWithSize:CGSizeMake(25, 25)] style:UIBarButtonItemStylePlain target:self action:@selector(showSettingsController:)];
+	
+	_mHalo = [[MultiplePulsingHaloLayer alloc]initWithHaloLayerNum:3 andStartInterval:1];
+	_mHalo.radius = 0;
+	_mHalo.useTimingFunction = NO;
+	_mHalo.position = CGPointMake(screenWidth/2, screenHeight-80);
+	[_mHalo setHaloLayerColor:[UIColor flatRedColor].CGColor];
+	[_mHalo buildSublayers];
+	[self.view.layer insertSublayer:_mHalo below:micButton.layer];
 }
+
+-(void)viewWillAppear:(BOOL)animated{
+	[super viewWillAppear:animated];
+	[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleNotif:) name:HNLocationUpdatedNotification object:nil];
+}
+
+-(void)handleNotif:(NSNotification *)notif{
+	if ([notif.name isEqualToString:HNLocationUpdatedNotification]) {
+		GMSCameraUpdate *camera = [GMSCameraUpdate setTarget:[[[HNLocationManager sharedLocationService]currentLocation]coordinate] zoom:15];
+		[_mapView animateWithCameraUpdate:camera];
+	}
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -86,21 +106,14 @@
 
 -(void)toggleRecording:(id)sender{
 	HNMicButton *button = (HNMicButton *)sender;
-	MultiplePulsingHaloLayer *halo = [[MultiplePulsingHaloLayer alloc]initWithHaloLayerNum:3 andStartInterval:1];
-	halo.position = button.center;
-	
-	halo.radius = 60;
-	halo.backgroundColor = [[UIColor flatRedColor]colorWithAlphaComponent:0.8].CGColor;
 	
 	BOOL recording = !button.isRecording;
-	if (button.isRecording) {
-		//
-		[self.view.layer addSublayer:halo];
+	if (recording) {
+		_mHalo.radius = 160.0f;
 	}
 	else{
-		[self.view.layer addSublayer:halo];
+		_mHalo.radius = 0;
 	}
-	[halo buildSublayers];
 	
 	if (recording) {
 		//start recording

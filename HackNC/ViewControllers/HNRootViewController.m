@@ -124,4 +124,12 @@
 	}
 }
 
+-(void)logout:(id)sender{
+	[PFUser logOutInBackgroundWithBlock:^(NSError *error){
+		if (!error) {
+			[self presentLoginViewController];
+		}
+	}];
+}
+
 @end

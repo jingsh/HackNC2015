@@ -12,6 +12,11 @@
 #import "HNCache.h"
 #import "HNConstants.h"
 
+#import "HNRootViewController.h"
+
+@import ChameleonFramework;
+@import Masonry;
+
 @interface HNSettingsController ()
 @property(nonatomic,strong) NSMutableDictionary *phrases;
 @end
@@ -56,17 +61,21 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return [[_phrases allKeys] count];
+	if (section == 0) {
+		return [[_phrases allKeys]count];
+	}
+	return 1;
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-	if ([[_phrases allKeys]count]>0) {
+	if (section == 0 && [[_phrases allKeys]count]>0) {
 		return @"Distress calls";
 	}
+	else if (section==1) return @"Log out";
 	return @"";
 }
 
@@ -78,7 +87,20 @@
 	if (!cell) {
 		cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
 	}
-	cell.textLabel.text = [[_phrases allKeys]objectAtIndex:indexPath.row];
+	if (indexPath.section == 0) {
+		cell.textLabel.text = [[_phrases allKeys]objectAtIndex:indexPath.row];
+	}
+	else{
+		UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+		[button setTitle:@"Log out" forState:UIControlStateNormal];
+		[button setTitleColor:[UIColor flatRedColor] forState:UIControlStateNormal];
+		[button.titleLabel setFont:[UIFont boldSystemFontOfSize:16]];
+		[button addTarget:(HNRootViewController *)[UIApplication sharedApplication].keyWindow.rootViewController action:@selector(logout:) forControlEvents:UIControlEventTouchUpInside];
+		[cell.contentView addSubview:button];
+		[button mas_makeConstraints:^(MASConstraintMaker *maker){
+			maker.edges.equalTo(cell.contentView);
+		}];
+	}
     return cell;
 }
 

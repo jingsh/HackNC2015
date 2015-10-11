@@ -12,4 +12,6 @@
 
 -(void)setRootViewController:(id)viewController animated:(BOOL)animated;
 
+-(void)logout:(id)sender;
+
 @end

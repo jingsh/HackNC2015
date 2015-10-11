@@ -35,15 +35,15 @@
 -(void)setStatedRecording:(BOOL)recording{
 	_isRecording = recording;
 	
-	UIImage *image = [UIImage imageWithStackedIcons:@[[FAKIonIcons iosMicIconWithSize:70],[FAKIonIcons iosCircleOutlineIconWithSize:90]] imageSize:CGSizeMake(200, 200)];
+	UIImage *image = [UIImage imageWithStackedIcons:@[[FAKIonIcons iosMicIconWithSize:70],[FAKIonIcons iosCircleOutlineIconWithSize:90]] imageSize:CGSizeMake(100, 100)];
 	UIColor *color, *pressedColor;
 	if (recording) {
 		color = [UIColor flatRedColor];
 		pressedColor = [UIColor flatRedColorDark];
 		
 	}else{
-		color = [UIColor flatWhiteColor];
-		pressedColor = [UIColor flatRedColor];
+		color = [UIColor flatSkyBlueColor];
+		pressedColor = [UIColor flatSkyBlueColorDark];
 	}
 	[self setImage:[image imageWithTintColor:color] forState:UIControlStateNormal];
 	[self setImage:[image imageWithTintColor:pressedColor] forState:UIControlStateHighlighted];

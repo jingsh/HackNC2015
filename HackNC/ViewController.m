@@ -12,8 +12,6 @@
 @import Masonry;
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet AIVoiceRequestButton *button;
-
 
 @end
 
@@ -23,18 +21,11 @@
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 	
-	[_button setSuccessCallback:^(id response){
-		NSLog(@"%@",response);
-	}];
 	
-	[_button setFailureCallback:^(NSError *error){
-		NSLog(@"%@",error);
-	}];
 }
 
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
-	// Dispose of any resources that can be recreated.
 }
 
 @end

@@ -41,9 +41,9 @@ static const CGFloat horizontalPadding = 30.0f;
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	//UI setup
-	UIImageView *logoView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"Logo.png"]];
-	[self.view addSubview:logoView];
+	UIImageView *background = [UIImageView new];
+	[self.view addSubview:background];
+	[background setImage:[UIImage imageNamed:@"loginBkg.png"]];
 	
 	UIButton *facebookButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, screenWidth, buttonHeight)];
 	[facebookButton setTitle:@"Log In with Facebook" forState:UIControlStateNormal];
@@ -57,9 +57,8 @@ static const CGFloat horizontalPadding = 30.0f;
 	
 	[self.view addSubview:facebookButton];
 	
-	[logoView mas_makeConstraints:^(MASConstraintMaker *maker){
-		maker.centerX.mas_equalTo(self.view.mas_centerX);
-		maker.bottom.mas_equalTo(self.view.mas_bottom).multipliedBy(0.25);
+	[background mas_makeConstraints:^(MASConstraintMaker *maker){
+		maker.edges.equalTo(self.view);
 	}];
 	
 	[facebookButton mas_makeConstraints:^(MASConstraintMaker *maker){

@@ -6,12 +6,12 @@
 //  Copyright © 2015 Jing Shan. All rights reserved.
 //
 
-#import "ViewController.h"
+@import UIKit;
 @import Parse;
 
 typedef void (^loginCompletionHandler)(PFUser *user, NSError *error);
 
-@interface HNLoginViewController : ViewController
+@interface HNLoginViewController : UIViewController
 
 -(instancetype)initLoginController:(loginCompletionHandler)completionHandler;
 

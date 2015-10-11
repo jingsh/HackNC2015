@@ -170,19 +170,21 @@ static const CGFloat verticalSpacing = 10.0f;
 	NSString *email = user.email;
 	
 	NSData *imageData;
-	if ([[[HNCache sharedCache]cachedUsers]objectForKey:user.objectId]) {
-		imageData = [[[HNCache sharedCache]cachedUsers]objectForKey:user.objectId];
+	NSDictionary *cacheUser = [[[HNCache sharedCache]cachedUsers]objectForKey:user.objectId];
+	
+	if (cacheUser) {
+		imageData = [cacheUser objectForKey:@"pic"];
 	}
 	else{
 		NSString *url = [user objectForKey:HNUserImagePicURLKey];
 		imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
+		NSDictionary *tempUser = @{@"pic":imageData,@"name":name};
 		NSMutableDictionary *dict = [[HNCache sharedCache]cachedUsers];
-		[dict setObject:imageData forKey:user.objectId];
+		[dict setObject:tempUser forKey:user.objectId];
 		[[HNCache sharedCache]setCachedUsers:dict];
 	}
 	[_profile setImage:imageData];
 	
-	//[_profile setUser:user];
 	[_nameLabel setText:name];
 	[_emailLabel setText:email];
 	_targetUser = user;

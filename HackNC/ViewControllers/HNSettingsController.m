@@ -30,9 +30,7 @@
 	
 	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addPhrase:)];
 	
-	_phrases = [@{@"duke sucks":@{@"receiver":@"9192658870",@"method":@"SMS"},@"hack":@{@"receiver":@"9192599266",@"method":@"Call"},@"carolina":@{@"receiver":@"9196999542",@"method":@"SMS"}}mutableCopy];
-	[[HNCache sharedCache]setCachedPhrases:_phrases];
-	//_phrases = [NSMutableDictionary dictionary];
+	_phrases = [NSMutableDictionary dictionary];
 }
 
 -(void)viewWillAppear:(BOOL)animated{

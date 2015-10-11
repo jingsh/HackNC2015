@@ -6,8 +6,8 @@
 //  Copyright © 2015 Jing Shan. All rights reserved.
 //
 
-#import "ViewController.h"
+@import UIKit;
 
-@interface HNHomeViewController : ViewController
+@interface HNHomeViewController : UIViewController
 
 @end

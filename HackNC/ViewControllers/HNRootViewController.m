@@ -12,6 +12,7 @@
 #import "HNLoginViewController.h"
 
 #import "HNConstants.h"
+#import "HNCache.h"
 
 @import Parse;
 @import ParseFacebookUtilsV4;
@@ -82,7 +83,6 @@
 -(void)updateUser{
 	if ([PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
 		[[[FBSDKGraphRequest alloc]initWithGraphPath:@"me" parameters:@{@"fields":@"name,email,id,gender"}]startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error){
-			//@{@"fields":@"first_name,name,email,id,gender"}
 			if (!error) {
 				NSDictionary *userData = (NSDictionary *)result;
 				NSString *facebookID = [userData objectForKey:@"id"];

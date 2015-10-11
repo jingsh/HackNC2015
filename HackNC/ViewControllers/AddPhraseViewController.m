@@ -10,10 +10,13 @@
 #import "HNConstants.h"
 #import "HNCache.h"
 
+
+@import Parse;
 @import Masonry;
 
 @interface AddPhraseViewController ()<UITextFieldDelegate>
 @property(nonatomic,strong) NSMutableDictionary *phrase;
+@property(nonatomic,strong) NSMutableDictionary *users;
 @end
 
 @implementation AddPhraseViewController
@@ -27,6 +30,8 @@
 	self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismiss:)];
 	
 	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(save:)];
+	
+	_users = [[HNCache sharedCache]cachedUsers];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -98,7 +103,14 @@
 	}
 	else if (indexPath.section == 1) {
 		if (indexPath.row == 0) {
-			cell.textLabel.text = @"Me";
+			cell.textLabel.text = [[PFUser currentUser]objectForKey:HNUserNameKey];
+			cell.accessoryType = UITableViewCellAccessoryNone;
+		}
+		else{
+			NSDictionary *thisUser = [_users objectForKey:[[_users allKeys]objectAtIndex:indexPath.row-1]];
+			NSString *name = [thisUser objectForKey:@"name"];
+			
+			cell.textLabel.text = name;
 			cell.accessoryType = UITableViewCellAccessoryNone;
 		}
 	}
@@ -112,7 +124,7 @@
 			cell.accessoryType = UITableViewCellAccessoryNone;
 		}
 		else if (indexPath.row == 2){
-			cell.textLabel.text = @"Push";
+			cell.textLabel.text = @"Push Notifications";
 			cell.accessoryType = UITableViewCellAccessoryNone;
 		}
 	}

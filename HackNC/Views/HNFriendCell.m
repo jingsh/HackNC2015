@@ -192,6 +192,7 @@ static const CGFloat verticalSpacing = 10.0f;
 	_status = status+1;
 	
 	[_friendButton setButtonStyle:_status];
+	
 }
 
 

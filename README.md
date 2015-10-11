@@ -1,6 +1,6 @@
 # HackNC2015
 
-##Introducing [Distress Call](jinsh.github.io/HackNC2015)
+##Introducing [Distress Call](https://jinsh.github.io/HackNC2015)
 
 ## Inspiration
 In many life-threatening situations, there is either no time or not practical for a person to use cellphone and ask for help.  Today we demonstrates Distress Call, an iOS app, which automatically ask help for you by hearing a preset “secret word” that you say when you in danger.  

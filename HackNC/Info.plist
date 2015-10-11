@@ -96,5 +96,15 @@
 		<string>fbauth2</string>
 		<string>fb-messenger-api20140430</string>
 	</array>
+	<key>NSLocationUsageDescription</key>
+	<string>The app needs to use your location to send your friends your location.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>The app needs to use your contacts.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>The app needs to use your microphone to listen to your safe words.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>The app needs to use your location in background</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>

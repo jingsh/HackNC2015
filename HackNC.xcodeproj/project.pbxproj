@@ -28,6 +28,23 @@
 		8E5390B21BC98C0800AB96A9 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390A91BC98C0800AB96A9 /* UIImage+ImageEffects.m */; settings = {ASSET_TAGS = (); }; };
 		8E5390B31BC98C0800AB96A9 /* UIImage+ResizeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390AB1BC98C0800AB96A9 /* UIImage+ResizeAdditions.m */; settings = {ASSET_TAGS = (); }; };
 		8E5390B41BC98C0800AB96A9 /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390AD1BC98C0800AB96A9 /* UIImage+RoundedCornerAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390B81BC9A37800AB96A9 /* HNLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390B71BC9A37800AB96A9 /* HNLocationManager.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390BA1BC9A97E00AB96A9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E5390B91BC9A97E00AB96A9 /* MapKit.framework */; };
+		8E5390BF1BC9B08600AB96A9 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E5390BB1BC9B08600AB96A9 /* FontAwesome.otf */; settings = {ASSET_TAGS = (); }; };
+		8E5390C01BC9B08600AB96A9 /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E5390BC1BC9B08600AB96A9 /* foundation-icons.ttf */; settings = {ASSET_TAGS = (); }; };
+		8E5390C11BC9B08600AB96A9 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E5390BD1BC9B08600AB96A9 /* ionicons.ttf */; settings = {ASSET_TAGS = (); }; };
+		8E5390C21BC9B08600AB96A9 /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E5390BE1BC9B08600AB96A9 /* zocial-regular-webfont.ttf */; settings = {ASSET_TAGS = (); }; };
+		8E5390C61BC9B14100AB96A9 /* HNMicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390C51BC9B14100AB96A9 /* HNMicButton.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390CB1BC9B5F300AB96A9 /* MultiplePulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390C81BC9B5F300AB96A9 /* MultiplePulsingHaloLayer.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390CC1BC9B5F300AB96A9 /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390CA1BC9B5F300AB96A9 /* PulsingHaloLayer.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390CF1BC9C59D00AB96A9 /* HNListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390CE1BC9C59D00AB96A9 /* HNListener.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390D21BC9E09C00AB96A9 /* HNContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390D11BC9E09C00AB96A9 /* HNContactsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390D51BC9E0C700AB96A9 /* HNSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390D41BC9E0C700AB96A9 /* HNSettingsController.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390D71BC9E34500AB96A9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E5390D61BC9E34500AB96A9 /* AddressBook.framework */; };
+		8E5390DA1BC9E3D400AB96A9 /* HNProfileImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390D91BC9E3D400AB96A9 /* HNProfileImageView.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390DD1BC9E59600AB96A9 /* HNFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390DC1BC9E59600AB96A9 /* HNFriendCell.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390E01BCA01CE00AB96A9 /* HNCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390DF1BCA01CE00AB96A9 /* HNCache.m */; settings = {ASSET_TAGS = (); }; };
+		8E5390E31BCA06F600AB96A9 /* AddPhraseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5390E21BCA06F600AB96A9 /* AddPhraseViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +97,34 @@
 		8E5390AB1BC98C0800AB96A9 /* UIImage+ResizeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeAdditions.m"; sourceTree = "<group>"; };
 		8E5390AC1BC98C0800AB96A9 /* UIImage+RoundedCornerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCornerAdditions.h"; sourceTree = "<group>"; };
 		8E5390AD1BC98C0800AB96A9 /* UIImage+RoundedCornerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCornerAdditions.m"; sourceTree = "<group>"; };
+		8E5390B61BC9A37800AB96A9 /* HNLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNLocationManager.h; path = Class/HNLocationManager.h; sourceTree = "<group>"; };
+		8E5390B71BC9A37800AB96A9 /* HNLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HNLocationManager.m; path = Class/HNLocationManager.m; sourceTree = "<group>"; };
+		8E5390B91BC9A97E00AB96A9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8E5390BB1BC9B08600AB96A9 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.otf; path = Pods/FontAwesomeKit/FontAwesomeKit/FontAwesome.otf; sourceTree = SOURCE_ROOT; };
+		8E5390BC1BC9B08600AB96A9 /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "foundation-icons.ttf"; path = "Pods/FontAwesomeKit/FontAwesomeKit/foundation-icons.ttf"; sourceTree = SOURCE_ROOT; };
+		8E5390BD1BC9B08600AB96A9 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ionicons.ttf; path = Pods/FontAwesomeKit/FontAwesomeKit/ionicons.ttf; sourceTree = SOURCE_ROOT; };
+		8E5390BE1BC9B08600AB96A9 /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zocial-regular-webfont.ttf"; path = "Pods/FontAwesomeKit/FontAwesomeKit/zocial-regular-webfont.ttf"; sourceTree = SOURCE_ROOT; };
+		8E5390C41BC9B14100AB96A9 /* HNMicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNMicButton.h; path = Views/HNMicButton.h; sourceTree = "<group>"; };
+		8E5390C51BC9B14100AB96A9 /* HNMicButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HNMicButton.m; path = Views/HNMicButton.m; sourceTree = "<group>"; };
+		8E5390C71BC9B5F300AB96A9 /* MultiplePulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiplePulsingHaloLayer.h; path = Helper/MultiplePulsingHaloLayer.h; sourceTree = "<group>"; };
+		8E5390C81BC9B5F300AB96A9 /* MultiplePulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultiplePulsingHaloLayer.m; path = Helper/MultiplePulsingHaloLayer.m; sourceTree = "<group>"; };
+		8E5390C91BC9B5F300AB96A9 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PulsingHaloLayer.h; path = Helper/PulsingHaloLayer.h; sourceTree = "<group>"; };
+		8E5390CA1BC9B5F300AB96A9 /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PulsingHaloLayer.m; path = Helper/PulsingHaloLayer.m; sourceTree = "<group>"; };
+		8E5390CD1BC9C59D00AB96A9 /* HNListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNListener.h; path = Class/HNListener.h; sourceTree = "<group>"; };
+		8E5390CE1BC9C59D00AB96A9 /* HNListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HNListener.m; path = Class/HNListener.m; sourceTree = "<group>"; };
+		8E5390D01BC9E09C00AB96A9 /* HNContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNContactsViewController.h; path = ViewControllers/HNContactsViewController.h; sourceTree = "<group>"; };
+		8E5390D11BC9E09C00AB96A9 /* HNContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HNContactsViewController.m; path = ViewControllers/HNContactsViewController.m; sourceTree = "<group>"; };
+		8E5390D31BC9E0C700AB96A9 /* HNSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNSettingsController.h; path = ViewControllers/HNSettingsController.h; sourceTree = "<group>"; };
+		8E5390D41BC9E0C700AB96A9 /* HNSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HNSettingsController.m; path = ViewControllers/HNSettingsController.m; sourceTree = "<group>"; };
+		8E5390D61BC9E34500AB96A9 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		8E5390D81BC9E3D400AB96A9 /* HNProfileImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNProfileImageView.h; path = Views/HNProfileImageView.h; sourceTree = "<group>"; };
+		8E5390D91BC9E3D400AB96A9 /* HNProfileImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HNProfileImageView.m; path = Views/HNProfileImageView.m; sourceTree = "<group>"; };
+		8E5390DB1BC9E59600AB96A9 /* HNFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNFriendCell.h; path = Views/HNFriendCell.h; sourceTree = "<group>"; };
+		8E5390DC1BC9E59600AB96A9 /* HNFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HNFriendCell.m; path = Views/HNFriendCell.m; sourceTree = "<group>"; };
+		8E5390DE1BCA01CE00AB96A9 /* HNCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNCache.h; path = Class/HNCache.h; sourceTree = "<group>"; };
+		8E5390DF1BCA01CE00AB96A9 /* HNCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HNCache.m; path = Class/HNCache.m; sourceTree = "<group>"; };
+		8E5390E11BCA06F600AB96A9 /* AddPhraseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddPhraseViewController.h; path = ViewControllers/AddPhraseViewController.h; sourceTree = "<group>"; };
+		8E5390E21BCA06F600AB96A9 /* AddPhraseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddPhraseViewController.m; path = ViewControllers/AddPhraseViewController.m; sourceTree = "<group>"; };
 		BF3C167DB0F42BFB6AC93571 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,8 +133,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E5390D71BC9E34500AB96A9 /* AddressBook.framework in Frameworks */,
 				8E53908C1BC9767900AB96A9 /* AVFoundation.framework in Frameworks */,
 				8E5390881BC964D600AB96A9 /* Pods.framework in Frameworks */,
+				8E5390BA1BC9A97E00AB96A9 /* MapKit.framework in Frameworks */,
 				89CEB790D44CCEC7D9094C93 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +177,8 @@
 				8E5390741BC958BC00AB96A9 /* AppDelegate.h */,
 				8E5390751BC958BC00AB96A9 /* AppDelegate.m */,
 				8E5390971BC98A0B00AB96A9 /* Helper */,
+				8E5390B51BC9A35800AB96A9 /* Class */,
+				8E5390C31BC9B10C00AB96A9 /* Views */,
 				8E53908D1BC9802500AB96A9 /* ViewControllers */,
 				8E5390771BC958BC00AB96A9 /* ViewController.h */,
 				8E5390781BC958BC00AB96A9 /* ViewController.m */,
@@ -145,6 +194,10 @@
 		8E5390711BC958BC00AB96A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8E5390BB1BC9B08600AB96A9 /* FontAwesome.otf */,
+				8E5390BC1BC9B08600AB96A9 /* foundation-icons.ttf */,
+				8E5390BD1BC9B08600AB96A9 /* ionicons.ttf */,
+				8E5390BE1BC9B08600AB96A9 /* zocial-regular-webfont.ttf */,
 				8E5390721BC958BC00AB96A9 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -159,6 +212,12 @@
 				8E5390921BC9866400AB96A9 /* HNHomeViewController.m */,
 				8E5390941BC9868600AB96A9 /* HNLoginViewController.h */,
 				8E5390951BC9868600AB96A9 /* HNLoginViewController.m */,
+				8E5390D01BC9E09C00AB96A9 /* HNContactsViewController.h */,
+				8E5390D11BC9E09C00AB96A9 /* HNContactsViewController.m */,
+				8E5390D31BC9E0C700AB96A9 /* HNSettingsController.h */,
+				8E5390D41BC9E0C700AB96A9 /* HNSettingsController.m */,
+				8E5390E11BCA06F600AB96A9 /* AddPhraseViewController.h */,
+				8E5390E21BCA06F600AB96A9 /* AddPhraseViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -166,6 +225,10 @@
 		8E5390971BC98A0B00AB96A9 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				8E5390C71BC9B5F300AB96A9 /* MultiplePulsingHaloLayer.h */,
+				8E5390C81BC9B5F300AB96A9 /* MultiplePulsingHaloLayer.m */,
+				8E5390C91BC9B5F300AB96A9 /* PulsingHaloLayer.h */,
+				8E5390CA1BC9B5F300AB96A9 /* PulsingHaloLayer.m */,
 				8E53909C1BC98AC100AB96A9 /* HNConstants.h */,
 				8E53909D1BC98AC100AB96A9 /* HNConstants.m */,
 				8E53909F1BC98C0800AB96A9 /* UIImage */,
@@ -195,9 +258,37 @@
 			path = Helper/UIImage;
 			sourceTree = "<group>";
 		};
+		8E5390B51BC9A35800AB96A9 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				8E5390B61BC9A37800AB96A9 /* HNLocationManager.h */,
+				8E5390B71BC9A37800AB96A9 /* HNLocationManager.m */,
+				8E5390CD1BC9C59D00AB96A9 /* HNListener.h */,
+				8E5390CE1BC9C59D00AB96A9 /* HNListener.m */,
+				8E5390DE1BCA01CE00AB96A9 /* HNCache.h */,
+				8E5390DF1BCA01CE00AB96A9 /* HNCache.m */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		8E5390C31BC9B10C00AB96A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E5390C41BC9B14100AB96A9 /* HNMicButton.h */,
+				8E5390C51BC9B14100AB96A9 /* HNMicButton.m */,
+				8E5390D81BC9E3D400AB96A9 /* HNProfileImageView.h */,
+				8E5390D91BC9E3D400AB96A9 /* HNProfileImageView.m */,
+				8E5390DB1BC9E59600AB96A9 /* HNFriendCell.h */,
+				8E5390DC1BC9E59600AB96A9 /* HNFriendCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		95251F4F8267A8118CBD2142 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8E5390D61BC9E34500AB96A9 /* AddressBook.framework */,
+				8E5390B91BC9A97E00AB96A9 /* MapKit.framework */,
 				8E53908B1BC9767900AB96A9 /* AVFoundation.framework */,
 				BF3C167DB0F42BFB6AC93571 /* Pods.framework */,
 			);
@@ -244,6 +335,9 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -274,9 +368,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E5390C11BC9B08600AB96A9 /* ionicons.ttf in Resources */,
 				8E5390811BC958BC00AB96A9 /* LaunchScreen.storyboard in Resources */,
 				8E53907E1BC958BC00AB96A9 /* Assets.xcassets in Resources */,
+				8E5390C21BC9B08600AB96A9 /* zocial-regular-webfont.ttf in Resources */,
+				8E5390BF1BC9B08600AB96A9 /* FontAwesome.otf in Resources */,
 				8E53907C1BC958BC00AB96A9 /* Main.storyboard in Resources */,
+				8E5390C01BC9B08600AB96A9 /* foundation-icons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,20 +433,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E5390E31BCA06F600AB96A9 /* AddPhraseViewController.m in Sources */,
 				8E5390AE1BC98C0800AB96A9 /* UIColor+FlatUI.m in Sources */,
 				8E5390931BC9866400AB96A9 /* HNHomeViewController.m in Sources */,
 				8E5390B41BC98C0800AB96A9 /* UIImage+RoundedCornerAdditions.m in Sources */,
+				8E5390C61BC9B14100AB96A9 /* HNMicButton.m in Sources */,
+				8E5390B81BC9A37800AB96A9 /* HNLocationManager.m in Sources */,
+				8E5390D21BC9E09C00AB96A9 /* HNContactsViewController.m in Sources */,
+				8E5390E01BCA01CE00AB96A9 /* HNCache.m in Sources */,
+				8E5390DA1BC9E3D400AB96A9 /* HNProfileImageView.m in Sources */,
 				8E5390791BC958BC00AB96A9 /* ViewController.m in Sources */,
 				8E5390961BC9868600AB96A9 /* HNLoginViewController.m in Sources */,
 				8E5390761BC958BC00AB96A9 /* AppDelegate.m in Sources */,
+				8E5390DD1BC9E59600AB96A9 /* HNFriendCell.m in Sources */,
 				8E5390B31BC98C0800AB96A9 /* UIImage+ResizeAdditions.m in Sources */,
 				8E5390B01BC98C0800AB96A9 /* UIImage+Empty.m in Sources */,
 				8E5390901BC9807E00AB96A9 /* HNRootViewController.m in Sources */,
 				8E5390AF1BC98C0800AB96A9 /* UIImage+AlphaAdditions.m in Sources */,
+				8E5390CC1BC9B5F300AB96A9 /* PulsingHaloLayer.m in Sources */,
 				8E5390B21BC98C0800AB96A9 /* UIImage+ImageEffects.m in Sources */,
 				8E5390731BC958BC00AB96A9 /* main.m in Sources */,
 				8E5390B11BC98C0800AB96A9 /* UIImage+FlatUI.m in Sources */,
 				8E53909E1BC98AC100AB96A9 /* HNConstants.m in Sources */,
+				8E5390D51BC9E0C700AB96A9 /* HNSettingsController.m in Sources */,
+				8E5390CF1BC9C59D00AB96A9 /* HNListener.m in Sources */,
+				8E5390CB1BC9B5F300AB96A9 /* MultiplePulsingHaloLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

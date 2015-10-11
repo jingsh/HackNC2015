@@ -9,12 +9,15 @@
 #import "AppDelegate.h"
 @import GoogleMaps;
 @import AVFoundation;
+@import ChameleonFramework;
 
 #import <Parse/Parse.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 
 #import "HNRootViewController.h"
+
+#import "HNLocationManager.h"
 
 @import ApiAI;
 
@@ -59,6 +62,9 @@
 	
 	apiai.configuration = configuration;
 	
+	[[HNLocationManager sharedLocationService]startUpdatingLocation];
+	
+	
 	return [[FBSDKApplicationDelegate sharedInstance]application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
@@ -102,8 +108,8 @@
 -(void)setGlobalApperance{
 	[[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
 	[[UINavigationBar appearance]setTintColor:[UIColor whiteColor]];
-	//[[UINavigationBar appearance]setBarTintColor:[UIColor]]
-	//[[UINavigationBar appearance]setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont fontWithName:TWBoldFontName size:18]}];
+	[[UINavigationBar appearance]setBarTintColor:[UIColor flatSkyBlueColor]];
+	[[UINavigationBar appearance]setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont boldSystemFontOfSize:20.0f]}];
 	[[UINavigationBar appearance]setTranslucent:YES];
 	[[UINavigationBar appearance]setBarStyle:UIBarStyleBlackTranslucent];
 }
